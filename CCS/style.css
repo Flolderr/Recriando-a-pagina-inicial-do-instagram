@@ -31,3 +31,47 @@ body {
 .bloco-celular img {
     height: 50rem;
 }
+.bloco-registro {
+    display: flex;   
+    align-items: center; /*este comando deixa toda a classe/div na horizontal*/
+    justify-content: space-around; /*agora ele esta na vertica */
+    flex-direction: column; /*este script deita todas as tagas de foma em coluna, ou seja um em baixo do outro*/ 
+    width: 50%;
+    min-height: 34rem;
+}
+.acesso {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray; /* obs se usar a borda depois de adcionar o padding, a borda 
+    vai ficar em torno do padding, isso e muito maneira para relatorios */
+}
+.acesso:nth-child(1) { 
+    /*o script :nth-child() depois da clase ".acesso" e um seletor que pega pega 
+    classes com o mesmo nome para edições, por exemplo 2 divs cujo qual o nome da classe e a mesma,
+    esse scripit :nth-child() entende que nos estmos chamando para edição a classe definida ante desse script
+    e para definir qual classe vamos editar no css basta apenas colocar o numero de forma crencente, exemplo: 
+    :nth-child(1) chama a primeira classe com o mesmo nome e :nth-child(2) procura a segunda classe
+    cujo qual tenha o mesmo nome da primeira.  */
+    /* 
+    este script afeta os filhos da tag tag mãe !
+    */
+    min-height: 19rem;
+}
+.logo-text {
+    height: 3rem;
+}
+.foto-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.foto-perfil img {
+    height: 6rem;
+}
