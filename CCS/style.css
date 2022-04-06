@@ -29,7 +29,7 @@ body {
     width: 50%;
 }
 .bloco-celular img {
-    height: 50rem;
+    height: 35rem;
 }
 .bloco-registro {
     display: flex;   
@@ -71,7 +71,108 @@ body {
     align-items: center;
     border-radius: 50%;
     overflow: hidden;
+
 }
 .foto-perfil img {
-    height: 6rem;
+    height: 7rem;
+}
+.insta-acesso {
+    background-color: #0095e6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+.insta-sair {
+    color: #0095e6;
+    margin-top: 1rem;
+}
+.pergunta-usu{
+    color: rgb(160, 160, 160);
+}
+.decisao-de-conta li {
+    display: flex;
+    display: inline-block;
+    text-decoration: none;
+}
+.acesso-link a {
+    color: #0095e6;
+    
+}
+.aplicativo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+    /*
+    caso queira deixar a div aonde acessa o aplicativo com o fundo branco e borda igual aos 2 blocos acima 
+    e so ativar o scrip abaixo
+    */
+    /*
+    background-color: #ffffff;
+    border: 1px solid lightgray;
+    */
+}
+.acesso-app {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+.dowload {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+.dowload:nth-child(1) {
+    width: 136px;
+    height: 40px;
+}
+.dowload:nth-child(2) {
+    width: 136px;
+    height: 40px;
+}
+
+/* media queries tablete */
+/*
+tela para tablete - esta tela vai ate ele tiver a quantidade de px definida como colocado abaixo !1500px 
+*/
+@media (max-width: 1500px) { 
+    .instagran1 {
+        width: 70%;
+    }
+}
+/* media queries tablete */
+/*
+tela para tablete - esta tela vai ate ele tiver a quantidade de px definida como colocado abaixo !1050px 
+*/
+@media (max-width: 1050px) { 
+    .instagran1 {
+        width: 90%;
+    }
+}
+
+/* media queries */
+/*
+tela para celular - esta tela vai ate ele tiver a quantidade de px definida como colocado abaixo ! 650px 
+*/
+@media (max-width: 650px) { 
+    body {
+        background-color: #ffffff;
+    }
+    .instagran1 {
+        width: 90%;
+    }
+    .bloco-celular{
+        display: none;
+    }
+    .bloco-registro {
+        width: 100%;
+    }
+    .acesso {
+        border: 1px solid transparent;
+    }
+
 }
